@@ -1,0 +1,102 @@
+* {
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  font-family: 'railway', sans-serif;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000000;
+  box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-height: 70vh;
+  padding: 20px 20px 20px 20px;
+}
+
+#text {
+  font-size: 30px;
+}
+
+#author {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.card > h3 {
+  text-align: center;
+}
+
+.card > p {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.clicks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clicks > #new-quote {
+  margin-left: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(77, 72, 72, 0);
+  box-shadow: 2px 2px 2px 2px rgba(250, 63, 6, 0.377);
+  background-color: rgba(250, 63, 6, 0.377);
+}
+
+.clicks > #new-quote:hover {
+  font-weight: bolder;
+  margin-left: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(77, 72, 72, 0);
+  box-shadow: 2px 2px 2px 2px rgba(250, 63, 6, 0.377);
+  background-color: rgba(250, 63, 6, 0.377);
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons button {
+  margin-right: 10px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid rgba(53, 53, 247, 0.966);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(103, 103, 255);
+  background-color: rgb(103, 103, 255);
+  cursor: pointer;
+}
+
+.social-icons button:hover {
+  font-weight: 700;
+  margin-right: 10px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid rgba(53, 53, 247, 0.966);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(103, 103, 255);
+  background-color: rgb(103, 103, 255);
+  cursor: pointer;
+}
+
+.social-icons:last-child {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .clicks {
+    gap: 50px;
+  }
+
+  .card > p {
+    margin-top: 20px;
+  }
+}
